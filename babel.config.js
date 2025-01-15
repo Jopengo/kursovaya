@@ -1,17 +1,19 @@
 const presets = [
-  [
+    [
       '@babel/preset-env',
       {
-          targets: {
-              edge: '17',
-              ie: '11',
-              firefox: '50',
-              chrome: '64',
-              safari: '11.1',
-          },
-          useBuiltIns: 'entry',
+        targets: {
+          edge: '17',
+          ie: '11',
+          firefox: '50',
+          chrome: '64',
+          safari: '11.1',
+        },
+        useBuiltIns: 'entry',
       },
-  ],
-];
-
-module.exports = { presets };
+    ],
+    '@babel/preset-react', // Добавляем пресет React
+  ];
+  
+  module.exports = { presets };
+  
